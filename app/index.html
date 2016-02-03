@@ -23,11 +23,77 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    
-    <div ng-controller="LoginCtrl">
-        <login></login>
+
+    <div class="container">
+        
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div ng-controller="LoginCtrl">
+                    <login></login>
+                </div>
+
+                <div ng-controller="SignUpCtrl">
+                    <sign-up></sign-up>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
+    <div ng-controller="DeleteMessageCtrl">
+        <delete-message></delete-message>
+    </div>
+
+    <div ng-controller="GetAllMessagesCtrl">
+        <get-all-messages></get-all-messages>
+    </div>
+
+    <div ng-controller="GetThreadsCtrl">
+        <get-threads></get-threads>
+    </div>
+
+    <div ng-controller="GetOneThreadCtrl">
+        <get-one-thread></get-one-thread>
+    </div>
+
+    <div ng-controller="GetParentsCtrl">
+        <get-parents></get-parents>
+    </div>
+
+    <div ng-controller="GetOneMessageCtrl">
+        <get-one-message></get-one-message>
+    </div>
+
+    <div ng-controller="ModifyMessageCtrl">
+        <modify-message></modify-message>
+    </div>
+
+    <div ng-controller="SendMessageCtrl">
+        <send-message></send-message>
+    </div>
+
+    <div ng-controller="ReplyMessageCtrl">
+        <reply-message></reply-message>
+    </div>
+
+    <div ng-controller="DeleteUserCtrl">
+        <delete-user></delete-user>
+    </div>
+
+    <div ng-controller="GetAllUsersCtrl">
+        <get-all-users></get-all-users>
+    </div>
+
+    <div ng-controller="GetOneUserCtrl">
+        <get-one-user></get-one-user>
+    </div>
+
+    <div ng-controller="SendProfileImageCtrl">
+        <send-profile-image></send-profile-image>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -43,8 +109,40 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/loginCtrl.js"></script>
+    <script src="scripts/controllers/signupCtrl.js"></script>
+    <script src="scripts/controllers/deletemessageCtrl.js"></script>
+    <script src="scripts/controllers/getallmessagesCtrl.js"></script>
+    <script src="scripts/controllers/getonemessageCtrl.js"></script>
+    <script src="scripts/controllers/modifymessageCtrl.js"></script>
+    <script src="scripts/controllers/sendmessageCtrl.js"></script>
+    <script src="scripts/controllers/deleteuserCtrl.js"></script>
+    <script src="scripts/controllers/getthreadsCtrl.js"></script>
+    <script src="scripts/controllers/getparentsCtrl.js"></script>
+    <script src="scripts/controllers/getonethreadCtrl.js"></script>
+    <script src="scripts/controllers/replymessageCtrl.js"></script>
+    <script src="scripts/controllers/getallusersCtrl.js"></script>
+    <script src="scripts/controllers/getoneuserCtrl.js"></script>
+    <script src="scripts/controllers/sendprofileimageCtrl.js"></script>
+
     <script src="scripts/directives/login.js"></script>
+    <script src="scripts/directives/signup.js"></script>
+    <script src="scripts/directives/deletemessage.js"></script>
+    <script src="scripts/directives/getallmessages.js"></script>
+    <script src="scripts/directives/getonemessage.js"></script>
+    <script src="scripts/directives/modifymessage.js"></script>
+    <script src="scripts/directives/sendmessage.js"></script>
+    <script src="scripts/directives/deleteuser.js"></script>
+    <script src="scripts/directives/getthreads.js"></script>
+    <script src="scripts/directives/getparents.js"></script>
+    <script src="scripts/directives/getonethread.js"></script>
+    <script src="scripts/directives/replymessage.js"></script>
+    <script src="scripts/directives/getallusers.js"></script>
+    <script src="scripts/directives/getoneuser.js"></script>
+    <script src="scripts/directives/sendprofileimage.js"></script>
+
+
     <script src="scripts/services/ajaxFactory.js"></script>
+    <script src="scripts/services/chatService.js"></script>
     <!-- endbuild -->
 </body>
 

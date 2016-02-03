@@ -1,18 +1,18 @@
 'use strict';
 
 angular.module('chatApp')
-  .controller('LoginCtrl', function ($scope, AjaxFactory, ChatService) {
-    $scope.logToChat = function(){
+  .controller('ModifyMessageCtrl', function ($scope, AjaxFactory) {
+    $scope.modifyMessage = function(){
         // data lomakkeesta
         var data = {
-            name: $scope.user
+            message: $scope.message,
+            mID: $scope.id
         };
-        // kutsu login-funktiota AjaxFactorystä
-        var request = AjaxFactory.login(data);
+        // kutsu modifyMessage-funktiota AjaxFactorystä
+        var request = AjaxFactory.modifyMessage(data);
         request.then(function(response){
             // tee vastauksella jotain
             console.log(response.data);
-            ChatService.setUser(response.data);
         }, function(error){
             // tee virheellä jotain
             console.log(error.data);
